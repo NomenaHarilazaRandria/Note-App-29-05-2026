@@ -64,7 +64,7 @@ Through this project, I practiced:
 
 ## Live Demo
 
-
+https://nomenaharilazarandria.github.io/Note-App-29-05-2026/
 
 ## Future Improvements
 
