@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Notes App</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div id="container">
+			<form id="noteForm">
+				<input type="text" id="titleInput" placeholder="Titre">
+				<div id="textAreaGroup">
+					<p id="counteur" style="font-size: 0.7rem"><span id="nbrChar">0</span>/500</p>
+					<textarea id="contentInput" style="width: 100%; font-size: 20px" maxlength="500" rows="5"></textarea>
+				</div>
+				<button type="submit">
+					Ajouter La Note
+				</button>
+			</form>
+			<div id="notesContainer"></div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>

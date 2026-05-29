@@ -1,0 +1,130 @@
+*{
+	box-sizing: border-box;
+	padding: 0px;
+	margin: 0px;
+	font-family: Arial;
+}
+body{
+	padding: 30px;
+}
+#noteForm {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	margin-bottom: 30px;
+}
+#container{
+	width: 80%;
+	margin: auto;
+}
+#notesContainer {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	padding: 20px;
+	justify-content: center;
+}
+form button{
+	padding: 5px;
+	border-radius: 5px;
+	background-color: #8BA888;
+	font-weight: bold;
+	border: none;
+}
+form button:hover{
+	transform: translateY(-2px);
+	transition: transform 0.2s;
+}
+form input {
+	padding: 5px;
+	border-radius: 5px;
+}
+.carte {
+	background: #f9f9f9;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	padding: 15px;
+	width: 300px;
+	box-shadow: 0 0px 4px rgba(0,0,0,0.1);
+    }
+.carte:hover {
+    transform: scale(1.03);
+    transition: transform 0.2s;
+	box-shadow: 0 0px 5px rgba(255, 99, 71,0.5);
+}
+.carte h2{
+	display: flex;
+	gap: 10px;
+	flex-direction: column;
+	background-color: rgb(240,240,240);
+	padding: 5px;
+	border-radius: 5px;
+	flex: 1;
+}
+.carte h2 .titleText {
+	font-size: 1.2rem;
+}
+.carte h2 .titleDate {
+	font-size: 1rem;
+	color: rgb(100,100,100);
+}
+.carte .controles {
+	display: flex;
+	justify-content: center;
+	padding: 0px 10px 0px 10px;
+}
+.carte p{
+	 word-wrap: break-word;
+}
+.controles button{
+	padding: 5px;
+	border-radius: 5px;
+	border: none;
+	background-color: tomato;
+	color: white;
+	font-weight: bold;
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+.controles button:hover{
+	cursor: pointer; 
+}
+.carte p {
+	margin : 10px 0px 10px 0px;
+}
+@media screen and (max-width : 480px) {
+.carte {
+	width: 100%;
+}
+#notesContainer {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	gap: 20px;
+	padding: 10px;
+}
+#container{
+	width: 100%;
+}
+}
+@media screen and (max-width : 720px) {
+.carte {
+	width: 80%;
+}
+#notesContainer {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	gap: 20px;
+	padding: 10px;
+	align-items: center;
+}
+}
+@media screen and (max-width: 300px){
+	.carte .controles {
+		flex-direction: column;
+	}
+	.controles button {
+		width: 100%;
+	}
+}
